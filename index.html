@@ -118,6 +118,131 @@
           </div>
         </div>
       </section>
+      <!-- ========== PRODUCTS + CONTACT BLOCK (PASTE HERE) ========== -->
+<style>
+/* product + QR styles (paste in head or inside <style> area) */
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:18px 0 36px}
+.product-card{background:#fff;border-radius:10px;padding:12px;text-align:center;box-shadow:0 6px 18px rgba(16,24,40,.06)}
+.product-card img{width:100%;max-width:260px;height:auto;border-radius:8px;object-fit:cover;margin:0 auto 10px}
+.product-card h3{font-size:18px;margin:6px 0;color:#222}
+.price{font-weight:700;color:#333;margin:6px 0}
+.buy-btn,.email-btn{display:inline-block;margin:8px 6px 0;padding:10px 12px;border-radius:8px;text-decoration:none;font-weight:600;color:#fff}
+.buy-btn{background:#25D366} .buy-btn:hover{background:#1da851}
+.email-btn{background:#0078ff} .email-btn:hover{background:#005fcc}
+#contactqr{background:#fafafa;padding:34px 18px;margin-top:26px}
+.qr-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;align-items:start;max-width:1100px;margin:0 auto}
+.qr-card{background:#fff;border-radius:10px;padding:18px;box-shadow:0 6px 18px rgba(16,24,40,.06);text-align:center}
+.qr-img{width:220px;max-width:80%;height:auto;border-radius:8px;margin-bottom:12px}
+.qr-link,.qr-download{display:inline-block;margin:6px 6px 0;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+.qr-link{background:#25D366;color:#fff} .qr-download{background:#efefef;color:#111}
+.float-contact{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:10px;z-index:1000}
+.float-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(16,24,40,.12);cursor:pointer;text-decoration:none}
+.float-wh{background:#25D366;color:#fff}
+.float-wc{background:#09b0ef;color:#fff}
+.float-btn svg{width:26px;height:26px}
+@media(max-width:520px){.qr-img{width:170px}.product-card img{max-width:200px}}
+</style>
+
+<section id="products" style="padding:28px 18px;">
+  <div style="max-width:1100px;margin:0 auto">
+    <h2 style="text-align:center;margin-bottom:8px;">Our Products</h2>
+    <p style="text-align:center;color:#666;margin-bottom:18px;">Wholesale / B2B — contact for MOQ, samples and price.</p>
+
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="products/prod1.jpg" alt="Little Princess Doll 1">
+        <h3>Little Princess Doll – Pink Bunny</h3>
+        <p class="price">38 RMB</p>
+        <a class="buy-btn" href="https://wa.me/15251980893?text=I%20want%20to%20order%20Pink%20Bunny%20Doll" target="_blank" rel="noopener">Buy Now (WhatsApp)</a>
+        <a class="email-btn" href="mailto:littleprincess@outlook.com?subject=Order%20Pink%20Bunny%20Doll">Email Order</a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="products/prod2.jpg" alt="Little Princess Doll 2">
+        <h3>Little Princess Doll – Blue Star Outfit</h3>
+        <p class="price">38 RMB</p>
+        <a class="buy-btn" href="https://wa.me/15251980893?text=I%20want%20to%20order%20Blue%20Star%20Doll" target="_blank" rel="noopener">Buy Now (WhatsApp)</a>
+        <a class="email-btn" href="mailto:littleprincess@outlook.com?subject=Order%20Blue%20Star%20Doll">Email Order</a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="products/prod3.jpg" alt="Little Princess Doll 3">
+        <h3>Little Princess Doll – Morning Sky Edition</h3>
+        <p class="price">38 RMB</p>
+        <a class="buy-btn" href="https://wa.me/15251980893?text=I%20want%20to%20order%20Morning%20Sky%20Doll" target="_blank" rel="noopener">Buy Now (WhatsApp)</a>
+        <a class="email-btn" href="mailto:littleprincess@outlook.com?subject=Order%20Morning%20Sky%20Doll">Email Order</a>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="products/prod4.jpg" alt="Little Princess Doll 4">
+        <h3>Little Princess Doll – Black Bunny Panda Outfit</h3>
+        <p class="price">38 RMB</p>
+        <a class="buy-btn" href="https://wa.me/15251980893?text=I%20want%20to%20order%20Black%20Panda%20Doll" target="_blank" rel="noopener">Buy Now (WhatsApp)</a>
+        <a class="email-btn" href="mailto:littleprincess@outlook.com?subject=Order%20Black%20Panda%20Doll">Email Order</a>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="products/prod5.jpg" alt="Little Princess Doll 5">
+        <h3>Little Princess Doll – Twin Set</h3>
+        <p class="price">38 RMB</p>
+        <a class="buy-btn" href="https://wa.me/15251980893?text=I%20want%20to%20order%20Twin%20Set%20Doll" target="_blank" rel="noopener">Buy Now (WhatsApp)</a>
+        <a class="email-btn" href="mailto:littleprincess@outlook.com?subject=Order%20Twin%20Set%20Doll">Email Order</a>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="products/prod6.jpg" alt="Little Princess Doll 6">
+        <h3>Little Princess Doll – Blue Pajama Edition</h3>
+        <p class="price">38 RMB</p>
+        <a class="buy-btn" href="https://wa.me/15251980893?text=I%20want%20to%20order%20Blue%20Pajama%20Doll" target="_blank" rel="noopener">Buy Now (WhatsApp)</a>
+        <a class="email-btn" href="mailto:littleprincess@outlook.com?subject=Order%20Blue%20Pajama%20Doll">Email Order</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT / QR CODES ========== -->
+<section id="contactqr">
+  <div style="max-width:1100px;margin:0 auto;text-align:center;padding:18px 0;">
+    <h2 style="margin-bottom:8px;">Contact & Order</h2>
+    <p style="color:#555;margin-bottom:18px;">Scan to start chat or add on WeChat — or click button to open WhatsApp.</p>
+
+    <div class="qr-grid">
+      <div class="qr-card">
+        <img src="whatsapp_qr.jpg" alt="WhatsApp QR" class="qr-img">
+        <h3>WhatsApp</h3>
+        <a class="qr-link" href="https://wa.me/15251980893" target="_blank" rel="noopener">Open WhatsApp</a>
+        <a class="qr-download" href="whatsapp_qr.jpg" download>Download QR</a>
+      </div>
+
+      <div class="qr-card">
+        <img src="wechat_qr.png" alt="WeChat QR" class="qr-img">
+        <h3>WeChat</h3>
+        <p style="margin:8px 0;font-weight:600;color:#222;">WeChat ID: <span style="color:#0a73d6;">GUANGJUCAI</span></p>
+        <a class="qr-download" href="wechat_qr.png" download>Download QR</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- floating contact buttons -->
+<div class="float-contact" aria-hidden="false">
+  <a class="float-btn float-wh" href="https://wa.me/15251980893" target="_blank" title="Chat on WhatsApp" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.52 3.48A11.95 11.95 0 0 0 12 0C5.373 0 .02 5.353.02 12c0 2.11.55 4.15 1.6 5.94L0 24l6.36-1.62A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12 0-3.21-1.25-6.21-3.48-8.52z" fill="#fff"/></svg>
+  </a>
+
+  <a class="float-btn float-wc" href="#contactqr" title="WeChat info">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 3h16v10H9l-5 5V3z" fill="#fff"/></svg>
+  </a>
+</div>
+<!-- ========== END BLOCK ========== -->
+
 <!-- =========================
      PRODUCTS + CONTACT (QR)
      Copy this whole block into your index.html
